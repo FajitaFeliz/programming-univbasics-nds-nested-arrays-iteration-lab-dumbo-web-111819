@@ -27,10 +27,10 @@ def find_greater_pair(src)
   while row_index < src.count do
     if src[row_index][0] > src[row_index][1]
       uber_array << src[row_index][0]
-    elsif src[row_index][0] < src[row_index][1]
+    elsif src[row_index][0] <= src[row_index][1]
       uber_array << src[row_index][1]
+    end
     row_index += 1
-  end
   end #=> nil
   uber_array
 end
@@ -43,4 +43,19 @@ def total_even_pairs(src)
   # As a reminder any number % 2 will return 0 or 1. If the result is 0, then
   # the number was even. Review the operator documentation if you've forgotten
   # this!
+  
+  total = 0
+  row_index = 0
+  while row_index < src.count do
+    element_index = 0
+    while element_index < src[row_index].count do
+      if (src[row_index][0] % 2 == 0) && (src[row_index][1] % 2 == 0)
+        total += src[row_index][0]
+        total += src[row_index][1]
+      end
+      element_index += 1
+    end
+    row_index += 1
+  end
+  total/2
 end
