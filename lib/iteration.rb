@@ -22,16 +22,16 @@ def find_greater_pair(src)
   # Produce a new Array that contains the larger number of each of the pairs
   # that are in the inner Arrays
   
-  uber_array = []
-  row_index = 0
-  while row_index < src.count do
-    if src[row_index][0] > src[row_index][1]
-      uber_array << src[row_index][0]
-    elsif src[row_index][0] < src[row_index][1]
-      uber_array << src[row_index][1]
-    row_index += 1
-  end #=> nil
-  uber_array
+  # uber_array = []
+  # row_index = 0
+  # while row_index < src.count do
+  #   if src[row_index][0] > src[row_index][1]
+  #     uber_array << src[row_index][0]
+  #   elsif src[row_index][0] < src[row_index][1]
+  #     uber_array << src[row_index][1]
+  #   row_index += 1
+  # end #=> nil
+  # uber_array
 end
 
 def total_even_pairs(src)
