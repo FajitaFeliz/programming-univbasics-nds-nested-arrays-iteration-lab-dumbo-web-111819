@@ -30,7 +30,6 @@ def find_greater_pair(src)
     elsif src[row_index][0] < src[row_index][1]
       uber_array << src[row_index][1]
     row_index += 1
-  end
   end #=> nil
   uber_array
 end
